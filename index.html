@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>千度一下，你就知道！</title>
+        <title>百度一下，你就知道！</title>
         <style>
             /*全局*/
             *{  padding: 0px; margin: 0px;   }
@@ -34,10 +34,33 @@
         </header>
 
         <!--图+搜索框-->
-        <div id="search"></div>
+        <div id="search">
+            <img src="baidu_search.png" width="270" height="129" alt="百度一下，你就知道！"/>
+            <form id="form">
+                <input type="text" id="sbox" maxlength="100" autocomplete="off">
+                <input type="submit" value="百度一下" id="sbottom">
+            </form>
+        </div>
 
         <!--下面的新闻啥的-->
-        <div id="news"></div>
+        <div id="n_warp"><!--整个横幅-->
+            <div id="n_main"><!--去掉两边多余的-->
+                <div class="n_menu_container"><!--新闻上面的菜单-->
+                    <span id="n_menu_mine">
+                        "我的关注"
+                    </span>
+                    <span id="n_menu_current">
+                        "推荐"
+                    </span>
+                    <span id="n_menu_mine">
+                        "导航"
+                    </span>
+                </div>
+                <div id="n_contents">
+
+                </div>
+            </div>
+        </div>
 
         <!--底栏-->
         <!--这点是直接扒的，之后重写-->
