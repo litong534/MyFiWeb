@@ -4,14 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>百度一下，你就知道！</title>
+        <link href="assets\CSS\background.css" rel="stylesheet">
         <style>
             /*全局*/
             *{  padding: 0px; margin: 0px;   }
             html,body{ width: 100%; height: 100%;}
+            body{
+                background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+            }
         </style><!--先留着-->
     </head>
     <body>
-
+        
         <!-- 导航栏 -->
         <header id="fi-header" class="" role="banner">
             <div class="container">
@@ -20,13 +24,13 @@
                     <!--导航栏的链接啥的-->
                     <div class="navbar-all" id="navbar-1">
                         <ul class="nav">
-                            <li><!--这里加链接-->新闻</li>
-                            <li><!--这里加链接-->hao123</li>
-                            <li><!--这里加链接-->地图</li>
-                            <li><!--这里加链接-->视频</li>
-                            <li><!--这里加链接-->贴吧</li>
-                            <li><!--这里加链接-->学术</li>
-                            <li><!--这里加链接-->更多</li>
+                            <li><a href="#新闻">新闻</a></li>
+                            <li><a href="#hao123">hao123</a></li>
+                            <li><a href="#地图">地图</a></li>
+                            <li><a href="#视频">视频</a></li>
+                            <li><a href="#贴吧">贴吧</a></li>
+                            <li><a href="#学术">学术</a></li>
+                            <li><a href="#更多">更多</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +39,7 @@
 
         <!--图+搜索框-->
         <div id="search">
-            <img src="baidu_search.png" width="270" height="129" alt="百度一下，你就知道！"/>
+            <img src="assets\img\baidu_search.png" width="270" height="129" alt="百度一下，你就知道！"/>
             <form id="form">
                 <input type="text" id="sbox" maxlength="100" autocomplete="off">
                 <input type="submit" value="百度一下" id="sbottom">
