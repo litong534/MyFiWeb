@@ -1,0 +1,10 @@
+#search_wrapper {
+	position: relative;
+	height: 39.4%;
+	min-height: 304px;
+	max-height: 359px;
+	/*↑这里可以防止下面的板块随着页面增高而滑下去*/
+	width: 1000px;
+	margin: 0 auto;
+	font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
