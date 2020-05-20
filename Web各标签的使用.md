@@ -28,7 +28,7 @@ scheme|定义用于翻译content属性的格式。```h5不支持```
 min-width|定义元素的最小宽度，即窗口宽度小于此值会自动出现横向滚动条
 position|提供`static``relative``absolute``fixed`四个标签；<br>`static`：默认值，无定位效果，会忽略`top`,`left`,`z-index`等声明；<br>`relative`：相对与原来位置偏移一个值，无其它效果；<br>`absolute`：相对于父级包含块定位；<br>`fixed`：相对于整个窗口定位。
 overflow|内容溢出时的选项；<br>`visible`：不裁剪内容，可能会显示在内容框之外。<br>`hidden`：只裁剪内容；<br>`scroll`：裁剪并提供滚动条；<br>`auto`：若溢出则滚动；<br>`no-display`：内容不合适内容框则删除整个框；<br>`no-content`：内容不合适内容框则隐藏内容。
-Z-index|堆叠优先级，默认为`auto`，与父元素相等；无父元素则为0。`inherit`：从父元素继承值。<br>***也可设定具体数值规定优先级，数值越高则离用户越近。***
+Z-index|堆叠优先级，可为负值，默认为`auto`，与父元素相等；无父元素则为0。`inherit`：从父元素继承值。<br>***也可设定具体数值规定优先级，数值越高则离用户越近。***
 zoom|根据 @viewport 来初始化一个缩放因数。可设置小数`(大于0)`或百分比`(非负百分比)`，`1.0`和`100%`表示不缩放。
 margin|可设置`1-4`个值。总是从`上`开始顺时针指明，若某一方向缺省，则合并到相对方向的数值。
 text-decoration|文本修饰。<br>`none`无任何修饰；<br>`overline` ,`line-through` ,`underline`分别为上划线、删除线、下划线；<br>`blink`闪烁文本；<br>`inherit`继承父元素属性。
