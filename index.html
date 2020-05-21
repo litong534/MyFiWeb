@@ -12,18 +12,20 @@
 				padding: 0px;
 				margin: 0px;
 			}
+			html{
+				color: #000;
+				overflow-y: scroll;
+			}
 			html,
 			body {
+				min-width: 1250px;
 				width: 100%;
 				height: 100%;
 			}
 			body {
-				background-image: linear-gradient(
-					to top,
-					#cfd9df 0%,
-					#e2ebf0 100%
-				);
+				background: #fff;
 				font-family: "Source Sans Pro";
+				text-align: center;
 			}
 		</style>
 		<!--先留着-->
@@ -51,13 +53,35 @@
 		</header>
 
 		<!--图+搜索框-->
-		<div id="search_wrapper">
-			<div id="s_fm">
+		<div id="search_wrapper" class="s-isindex-wrap search_wrapper s-title-img">
+			<div id="s_fm" class="s_form s_form_login">
 				<div class="s_form_warpper">
-					<div id="lg" class="s-p-top"></div>
 					<!--logo-->
-					<form name="f" id="form" class="fm" action="/s"></form>
-					<!--onsubmit=""要写到上面去-->
+					<div id="lg" class="s-p-top">
+						<img src="assets\img\baidu_search.png" width="270" height="129" usemap="#mp"/>
+						<map name="mp" id="s_mp">
+							<area 
+							style="cursor: pointer;outline: none;" 
+							shape="rect" coords="0,0,270,129" 
+							href="imgtitle.html" 
+							target="_blank" 
+							onmousedown="return_ns_c({'fm':'behs','tab':'bdlogo'})"
+							>
+						</map>
+					</div>
+
+					<!--onsubmit=""要写-->
+					<form name="f" id="form" class="fm" action="/s">
+						<span id="s_kw_wrap" >
+							<!--相机图标-->
+							<span class="camera-icon"></span>
+							<input type="text" class="s_ipt nobg_s_fm_hover" maxlength="100" autocomplete="off">
+						</span>
+						<span class="btn_wr" id="s_btn_wr">
+							<input type="submit" value="百度一下" id="su" class="s_btn">
+						</span>
+					</form>
+					
 				</div>
 			</div>
 		</div>

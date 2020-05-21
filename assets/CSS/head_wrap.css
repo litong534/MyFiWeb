@@ -8,3 +8,57 @@
 	margin: 0 auto;
 	font-family: Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
+
+#search_wrapper .s-p-top{
+	height: 60%;
+	min-height: 182px;
+	max-height: 212px;
+	position: relative;
+	z-index: 0;
+	text-align: center;
+}
+
+#search_wrapper .s_form{
+	width: 654px;
+	height: 100%;
+	margin: 0 auto;
+	text-align-last: left;
+	z-index: 100;
+}
+
+#search_wrapper .s_ipt_wr{
+	position: relative;
+	width: 546px;
+}
+
+.camera-icon{
+	z-index: 1;
+	position: absolute;
+	right: 11px;
+	top: 50%;
+	margin-top: 8px;
+	height: 16px;
+	width: 18px;
+	background-image: url(assets\img\Camera.svg) no-repeat;
+	cursor: pointer;
+}
+
+#search_wrapper .s_btn{
+	cursor: pointer;
+	width: 108px;
+	height: 44px;
+	line-height: 45px;
+	padding: 0;
+	background: 0 0;
+	border-radius: 0 10px;
+	font-size: 17px;
+	color: #fff;
+	box-shadow: none;
+	font-weight: 400;
+	border: none;
+	outline: 0;
+}
+
+#search_wrapper input{
+	font-family: Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+}
