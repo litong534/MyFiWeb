@@ -39,6 +39,7 @@ Z-index|堆叠优先级，可为负值，默认为`auto`，与父元素相等；
 usemap|属于标签 `<img>` 的属性，将图像定义为客户端图像映射（带有可点击区域的图像），与` <map> `的 name 或 id 属性关联，建立二者之间的关系
 autocomplete|自动完成表单，即表单记忆功能，可设置` off `或` on `
 cursor|鼠标移动到元素上时显示的样式。常用：<br>`Pointer`：可点击；<br>`wait`：加载图标；<br>`Defalut`：默认光标；<br>`Move`：移动图标；<br>`help`：帮助图标；
+padding|内边距。数值设定同 `margin` ；默认值为0。可以设定 `auto`,`*length*`,`%`,`inherit`；
 
 ## 选择器重点
 

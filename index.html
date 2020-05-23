@@ -6,6 +6,7 @@
 		<title>百度一下，你就知道！</title>
 		<link href="assets\CSS\background.css" rel="stylesheet" />
 		<link href="assets\CSS\bottomLayer.css" rel="stylesheet" />
+		<link href="assets\CSS\head_wrap.css" rel="stylesheet"/>
 		<style type="text/css">
 			/*全局*/
 			* {
@@ -27,6 +28,8 @@
 				font-family: "Source Sans Pro";
 				text-align: center;
 			}
+			
+			
 		</style>
 		<!--先留着-->
 	</head>
@@ -58,7 +61,7 @@
 				<div class="s_form_warpper">
 					<!--logo-->
 					<div id="lg" class="s-p-top">
-						<img src="assets\img\baidu_search.png" width="270" height="129" usemap="#mp"/>
+						<img src="assets\img\baidu_search.png" id="img_logo" width="270" height="129" usemap="#mp"/>
 						<map name="mp" id="s_mp">
 							<area 
 							style="cursor: pointer;outline: none;" 
@@ -75,7 +78,7 @@
 						<span id="s_kw_wrap" >
 							<!--相机图标-->
 							<span class="camera-icon"></span>
-							<input type="text" class="s_ipt nobg_s_fm_hover" maxlength="100" autocomplete="off">
+							<input type="text" id="kw" class="s_ipt nobg_s_fm_hover" maxlength="100" autocomplete="off">
 						</span>
 						<span class="btn_wr" id="s_btn_wr">
 							<input type="submit" value="百度一下" id="su" class="s_btn">
