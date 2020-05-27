@@ -66,6 +66,15 @@
 	cursor: pointer;
 }
 
+#search_wrapper .camera-icon{
+	background-position: 0 -51px;
+	right: 16px;
+	margin-top: -9px;
+	background-size: 24px 96px;
+	width: 24px;
+    height: 20px;
+}
+
 #search_wrapper .s_btn{
 	cursor: pointer;
 	width: 108px;
